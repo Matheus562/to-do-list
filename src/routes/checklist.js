@@ -16,6 +16,7 @@ router.get("/:id", (req, res) => {
   console.log(req.params.id);
   res.send(`ID: ${req.params.id}`);
 });
+
 router.put("/:id", (req, res) => {
   console.log(req.body);
   res.send(`PUT ID: ${req.params.id}`);
