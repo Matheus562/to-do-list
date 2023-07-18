@@ -1,5 +1,4 @@
 <form method="post" action="<%= url %>">
-  >
   <div class="field">
     <label class="label">Nome</label>
     <div class="control">
@@ -10,7 +9,7 @@
         placeholder="Lista de Tarefas"
         value="<%= checklist.name %>"
       />
-      <% if(checklist.errors && checklist.errors.hasOwnProperty('name')) { %>
+      <% if(checklist.error) { %>
       <p class="is-danger help"><%= checklist.error.name.message %></p>
       <% } %>
     </div>
